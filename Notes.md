@@ -37,7 +37,7 @@
 #### class, id, accesskey, tabindex, 
 
 # Special Entities
-&lt;, &gt;, &copy;, &nbsp;(blank space), &cent;, &amp;, 
+#### &lt;, &gt;, &copy;, &nbsp;(blank space), &cent;, &amp;, 
 
 # Images
 #### jpeg(.jpg and .jpeg), gif, png, svg, bmp(bitmap)
@@ -88,10 +88,75 @@
 
 # Validate for accessibility - wave.webaim.org
 
-# Hosting a site
+# Hosting a site(using Cpanel)
 #### Need a domain name - bought for a few years at a time, most common is .com but others exist
 #### Need a hosting service - need a registered IP address to connect domain name to internet, 
-#### https://byethost.com
+#### https://beythost.com
 
 
+# Secure File Transfer Protocol(FTP, SFTP)
+#### HTTP is a display protocol
+#### FTP is a transfer protocol
+#### Install FTP client fugu/cyberduck for mac, winscp for windows
+#### Find the ftp address for your hosting service from the email they sent you
 
+# CCS3
+
+## Inline styling
+#### <h1 style="color:blue">Styled Heading Inline</h1>
+#### Takes precedence
+
+## External StyleSheet
+#### selector { property: value;}
+#### h1 { color: blue;}
+#### Will be used last as a choice of the three
+#### If multiple of these exist, the last one linked has precedence
+
+## Internal StyleSheet(used for one page only best practice)
+#### <style>color: blue;<style>
+#### Will be used after inline styling
+
+# Comments
+#### //This is how comments are done in html
+#### /* This is how comments are done in css */
+
+# Color Conventions
+#### Avoid using color names
+#### Hexadecimal colors 16 digits #0-9A-F, 6 or 9 digits
+#### rgb(g, r, b)
+#### rgba(g, r, b, transparency) - alpha channel
+#### Use colors to convey meaning over style but don't use color ALONE to convey meaning. Use alternate text or a caption also
+
+# Styling Text for Max Impact
+#### font( family, style, variant, size, color), background, alignment, line-height
+#### Use sans-serif fonts when possible
+
+## Custon Fonts
+#### @font-face{ font-family: mySpecialName; src: url("dee.ttf");}
+#### h1{ font-family: mySpecialName;}
+
+## Font-style
+#### normal, italic, oblique
+
+## Font-variant
+#### normal or small-caps
+
+## Font Size
+#### px, %, 200%, 150% etc.
+
+#### color, background-color, text-align, font-size, line-height(line spacing between lines), 
+
+
+# Common Display Values
+#### inline: sits next to each other taking up just enough width and height, accepts no height or width
+#### block: forces a line break between elements
+#### inline-block: accepts height and width
+#### none: gets removed from page
+
+# Complementary Display Properties
+#### Float: Repositions elements to the right or left, and removes them from their position, as the other elements move in to fill the old space.  Float right flipped the order of the elements - elements won't overlap, values are either left or right
+#### Clear: Used to keep floating elements away, values are left, right, or both
+#### Browser by default places things upper left hand corner
+
+# Element Overflow
+#### 
