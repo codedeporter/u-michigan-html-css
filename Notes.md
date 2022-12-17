@@ -14,7 +14,7 @@
 #### Containers, hr, address, blockquote(has cite attribute), details(not implemented in firefox), summary
 
 ## Inline Tags
-#### span, cite, abbr(shows the full word on hover), time, code, sub, sup
+#### span, cite, abbr(shows the full word on hover), time, code, sub, sup, a
 
 ## More Tags
 #### button, meter(attributes are min, max, value), progress, iframe, bdo(attribute dir, goes left to right or right to left), <map> with <area>, 
@@ -31,6 +31,7 @@
 ### Display attributes:
 #### block(can take width and height); newline is inserted before and after so takes up the whole width 
 #### inline(can NOT take width and height) Only uses as much space as needed to contain the element
+#### table, grid, flexbox
 
 ### Tag attributes
 #### img has src, alt, title, class
@@ -54,7 +55,7 @@
 
 
 # Links
-#### Needs a hyper-reference and content
+#### Are inline elements!! Needs a hyper-reference and content
 #### Types: Absolute(full url in the href), Relative(only the filename in the href maybe a folder also), (using the # eg. #history), Graphical, internal
 #### links should never be specific to your computer!!
 #### Can use an image for your content eg.
@@ -152,6 +153,9 @@
 #### block: forces a line break between elements
 #### inline-block: accepts height and width
 #### none: gets removed from page
+#### table(used for table-like layout without table structure.  Use display:table along with display:table-cell for elements), grid, flex
+
+
 
 # Complementary Display Properties
 #### Float: Repositions elements to the right or left, and removes them from their position, as the other elements move in to fill the old space.  Float right flipped the order of the elements - elements won't overlap, values are either left or right
@@ -159,4 +163,59 @@
 #### Browser by default places things upper left hand corner
 
 # Element Overflow
-#### 
+#### What happens when you set a height/width and the content doesn't fit any longer?
+#### User the overflow property: visible, hidden, scroll, auto
+
+# Visibility
+#### Seen by user or not?
+#### options: visible, hidden, collapse(tables)
+
+# Box Model
+## Height and Width
+#### The height and width of any inline element is the content itself!!!!
+
+## Border
+#### All elements can have borders - style, width, color, style is mandatory
+
+## Margin 
+#### outside the border Can be positive or negative
+
+## Padding
+#### between element and border
+
+# Center Text
+#### text-align: center;
+
+# Centering an element
+#### center horizontally: margin: 0 auto - the element must be display: block, must not float, must not have a fixed or absolute position, must have a numerical width
+
+# Box Sizing
+#### content-box: default additive
+#### border-box: width takes content, padding, and border into consideration
+
+# Measurements - setting height and width
+#### Absolute - set to a specific size px, mm, cm, pt etc
+#### Fluid - sets size relative to surrounding elements %, vw, vh, em(font) - 1em = current size, rem(font) - 1rem = 16px(size of root element)
+
+# Styling Links
+#### text-decoration
+#### links have states: a:link, a:visited, a:hover(doen't work on touch, phones etc), a:focus(activated with keyboard tabs), a:active(being clicked - adds border while holding down)
+#### Rules: a:hover MUST come after a:link, a:visited and a:active MUST come after a:hover
+
+# Styling Lists
+#### Properties - font, margin, list-style-type, list-style-image, list-style-position, list-style
+
+# Advanced Selectors
+## Descendant selectors (nav a) - style all the anchor links inside a nav tag
+## Child selectors (nav > a) - the anchor element must be a direct child of the nav
+## Adjacent sibling (hl + ol) - elements must be at same level
+
+
+
+
+
+
+
+
+
+
